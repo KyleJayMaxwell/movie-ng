@@ -1,3 +1,8 @@
-    <div class="col-md-8 col-md-offset-2" ng-repeat="result in movies">
-          <h3 class="center">{{ result.Title }}<br>({{ result.Year }})</h3>
+    <div class="row" ng-repeat="result in movies">
+      <div class="col-md-4">
+        <img src="{{ result.Poster }}">
+      </div>
+      <div class="col-md-8">
+            <h3 class="center">{{ result.Title }}<br><span class="pull-right">{{ result.Year }}</span></h3>
+      </div>
     </div>
